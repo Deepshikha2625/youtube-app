@@ -1,0 +1,98 @@
+/*styles for search button*/
+#searchbtn{
+    bottom:9px;
+    float:right;
+    transform: translate(560px,-35px);
+    width:20%;
+}
+/*styles for input field*/
+input{
+    width:30%;
+    transform:translate(90%,30%);
+    height:2em;
+    outline:none;
+}
+/*styles for comment text*/
+.cmnts{
+   font-size:30px;
+   font-family:serif;
+   font-style: normal;
+   padding:7px;
+   margin:12px;
+}
+/*styles for text area where we write comments*/
+textarea{
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
+    width:50%;
+    float:right;
+    position: relative;;
+    top:13px;
+}
+
+ 
+/*styles for comment button*/
+#commentbtn{
+    display:inline;
+    margin:30px;
+    padding:2px;
+    transform:translate(370%,190%);
+    width:12%;
+    background-color:white;
+    outline:none;
+}
+#commentbtn:hover {
+    border-color:blueviolet;
+ }
+/*styles for cancel button*/
+#cancelbtn{
+    float:right;
+    right:-12px;
+    position: relative;;
+    bottom:8.5px;
+    padding:2px;
+   width:12%;
+   background-color:white;
+   
+}
+#cancelbtn:hover{
+     border-color: blueviolet;
+}
+/*styles for video item*/
+#title1{
+   
+    width:160px; 
+    float:left; 
+    left:200%;
+    overflow:hidden; 
+    word-wrap: normal;
+    font-size:15px;
+}
+/*styles for favorite heart icon */
+.container{
+    position: absolute;
+    left:60%;
+    top:125%;
+    transform: translate(-50%,-50%);
+    padding:30px;
+   
+}
+.container i {
+    font-size:2rem;
+}
+.container:hover i{
+    color:#f50057;
+}
+.fas{
+    color:#f50057;
+    transition: .4s;
+}
+/*styles for heading tag which shows no videos found*/
+h1{
+    margin:190px;
+    float:right;
+    right:50px;
+    transform:translate(95%,80%);
+   
+}
