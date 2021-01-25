@@ -9,7 +9,7 @@ export default ({ video }) => {
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
  
   return (
-   /*video frame work , typography parts covers all the title subtitle,favorite heart icon which className is far fa-heart*/
+   /*video frame work , typography parts covers all the title subtitle,heart icon functionality added*/
     <React.Fragment>
       <Paper elevation={3} style={{ height: "70%",width:"130%"}}>
         <iframe 
@@ -29,8 +29,9 @@ export default ({ video }) => {
         </Typography>
         </Paper>
         {/*like button */}
+        
         <div className='fav'>
-              <FormControlLabel
+             <FormControlLabel
                 control={<Checkbox icon={<FavoriteBorder />}
                   checkedIcon={<Favorite />}
                   name="checkedH" />}
