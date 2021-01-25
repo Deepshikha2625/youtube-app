@@ -69,24 +69,8 @@ textarea{
     word-wrap: normal;
     font-size:15px;
 }
-/*styles for favorite heart icon */
-.container{
-    position: absolute;
-    left:60%;
-    top:125%;
-    transform: translate(-50%,-50%);
-    padding:30px;
-   
-}
-.container i {
-    font-size:2rem;
-}
-.container:hover i{
-    color:#f50057;
-}
-.fas{
-    color:#f50057;
-    transition: .4s;
+.fav{
+    transform: translate(125%,-90%);
 }
 /*styles for heading tag which shows no videos found*/
 h1{

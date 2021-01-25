@@ -1,6 +1,9 @@
 import React, { Component } from "react";
-/*import  "./Fav";*/
 import { Paper, TextField, Typography } from "@material-ui/core";
+import FormControlLabel from '@material-ui/core/FormControlLabel';
+import Checkbox from '@material-ui/core/Checkbox';
+import Favorite from '@material-ui/icons/Favorite';
+import FavoriteBorder from '@material-ui/icons/FavoriteBorder';
 export default ({ video }) => {
   if (!video) return <h1>NO VIDEOS FOUND</h1>;  /*if  no videos found or searched*/
   const videoSrc = `https://www.youtube.com/embed/${video.id.videoId}`;
@@ -24,11 +27,15 @@ export default ({ video }) => {
         </Typography>
         <Typography variant="subtitle2">{video.snippet.description}
         </Typography>
-
         </Paper>
-        <div className="container">
-            <i onClick ="Toggle()"id="btn" className="far fa-heart"></i>
-      </div>
+        {/*like button */}
+        <div className='fav'>
+              <FormControlLabel
+                control={<Checkbox icon={<FavoriteBorder />}
+                  checkedIcon={<Favorite />}
+                  name="checkedH" />}
+              />
+            </div>
     
     <div>
       <p className="cmnts">Comments</p>
