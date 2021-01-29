@@ -5,6 +5,9 @@
     transform: translate(560px,-35px);
     width:20%;
 }
+#searchbtn:hover{
+    border-color:blueviolet;
+}
 /*styles for input field*/
 input{
     width:30%;
@@ -20,24 +23,38 @@ input{
    padding:7px;
    margin:12px;
 }
+#nametext{
+    width:40%;
+    height: 2em;
+    outline: none;
+    transform:translate(10%,-30%);
+    padding-top: 20px;
+    margin-top: 0.1em;
+    border-color:#c5c3c3;
+    border-style: none none solid none; 
+}
 /*styles for text area where we write comments*/
 textarea{
     border-top-style: hidden;
     border-right-style: hidden;
     border-left-style: hidden;
-    width:50%;
+    transform:translate(40%,-220%);
+    width:40%;
     float:right;
-    position: relative;;
-    top:13px;
+    border-color:#c5c3c3;
+    outline: none;
+    margin-left: 9.5rem;
+    border-style: none none solid none; 
 }
 
- 
+
+
 /*styles for comment button*/
 #commentbtn{
     display:inline;
     margin:30px;
     padding:2px;
-    transform:translate(370%,190%);
+    transform:translate(350%,120%);
     width:12%;
     background-color:white;
     outline:none;
@@ -48,26 +65,26 @@ textarea{
 /*styles for cancel button*/
 #cancelbtn{
     float:right;
-    right:-12px;
     position: relative;;
     bottom:8.5px;
     padding:2px;
-   width:12%;
-   background-color:white;
-   
+    transform:translate(607%,-70%);
+    width:12%;
+    background-color:white;
+    outline:none;
 }
 #cancelbtn:hover{
      border-color: blueviolet;
 }
 /*styles for video item*/
 #title1{
-   
     width:160px; 
     float:left; 
     left:200%;
     overflow:hidden; 
     word-wrap:normal;
     font-size:15px;
+    transform: translate(20%);
 }
 .fav{
     transform: translate(125%,-90%);

@@ -25,28 +25,10 @@ export default ({ onSubmit }) => {
        placeholder="search"
         value={searchTerm}
         onChange={handleChange}
-        onKeyPress={onKeyPress}
-        
+        onKeyPress={onKeyPress}   
      />
-        {/*<div className="header">
-            <Link>
-            <img className="header_logo" src="youtube.png"></img>
-            </Link>
-          
-           <div className="header_input">
-      <input onChange={e =>setInputSearch(e.target.value)}value={inputSearch} placeholder="upGrad" type="text"/>
-      <Link to={'/search/${inputSearch}'}>
-      <button className="searchbtn">Search</button>
-      </Link>
-        </div>
-        </div>
-  */}
-    
     </Paper>
-    
     </React.Fragment>
   
   );
 }
-
-

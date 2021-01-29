@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Paper, TextField, Typography } from "@material-ui/core";
+import { Paper,Typography } from "@material-ui/core";
 import FormControlLabel from '@material-ui/core/FormControlLabel';
 import Checkbox from '@material-ui/core/Checkbox';
 import Favorite from '@material-ui/icons/Favorite';
@@ -41,8 +41,8 @@ export default ({ video }) => {
     <div>
       <p className="cmnts">Comments</p>
    
-      <TextField style={{padding:"7px"}}
-        label="Your Name" 
+      <input type="text" id="nametext"
+        placeholder="Your Name" 
       />
       <textarea id="Textarea"
        placeholder="Your Comment"
@@ -54,5 +54,3 @@ export default ({ video }) => {
   );
 
 }
-
-  
