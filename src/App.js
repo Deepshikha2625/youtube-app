@@ -14,7 +14,7 @@ export default () => {
         <Grid container spacing={6}>
           <Grid item xs={5}>
             <SearchBar onSubmit={handleSubmit} />
-            <button id="searchbtn">
+            <button id="searchbtn" href="#" onClick="{handleSubmit} type="submit" name="search" value="{searchTerm}">
               search  
             </button>
           
